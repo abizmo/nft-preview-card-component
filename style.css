@@ -32,14 +32,25 @@ body {
   border-radius: 0.8rem;
   height: 300px;
   width: 100%;
-  background: url("/images/image-equilibrium.jpg") center / contain no-repeat;
+  background: url("images/image-equilibrium.jpg") center / contain no-repeat, hsla(178, 100%, 50%, 0%);
+  background-blend-mode: overlay;
+  position: relative;
 }
 
-.image:hover {
-  background-color: hsl(178, 100%, 50%);
+.card__image:hover {
+  background-color: hsla(178, 100%, 50%, 50%);
+  cursor: pointer;
 }
 
-.card h3 {
+.card__image:hover:before {
+  content: url("images/icon-view.svg");
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.card h1 {
   color: hsl(0, 0%, 100%);
   font-size: 1.2rem;
   font-weight: 600;
