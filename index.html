@@ -3,15 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  
   <title>Frontend Mentor | NFT preview card component</title>
-
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -19,38 +16,36 @@
   </style>
 </head>
 <body>
-
-  <div class="card">
-    <img src="images/image-equilibrium.jpg" alt="Equilibrium">
-    <div class="card__body">
-      <h3>
-        Equilibrium #3429
-      </h3>
-      <p>
-        Our Equilibrium collection promotes balance and calm.
-      </p>
-      <div class="card__meta">
-        <span class="card__meta-data card__value">
-          <img src="images/icon-ethereum.svg" alt="ethereum">
-          0.041 ETH
-        </span>
-        <span class="card__meta-data card__time">
-          <img src="images/icon-clock.svg" alt="clock">
-          3 days left
-        </span>
+  <main>
+    <div class="card">
+      <div class="card__image"></div>
+      <div class="card__body">
+        <h1 class="activate">
+          Equilibrium #3429
+        </h1>
+        <p>
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <div class="card__meta">
+          <span class="card__meta-data card__value">
+            <img src="images/icon-ethereum.svg" alt="ethereum">
+            0.041 ETH
+          </span>
+          <span class="card__meta-data card__time">
+            <img src="images/icon-clock.svg" alt="clock">
+            3 days left
+          </span>
+        </div>
+      </div>
+      <div class="card__footer">
+        <img src="images/image-avatar.png" alt="avatar">
+        Creation of<span class="activate">Jules Wyvern</span>
       </div>
     </div>
-    <div class="card__footer">
-      <img src="images/image-avatar.png" alt="avatar">
-      Creation of<span>Jules Wyvern</span>
-    </div>
-
-  
-  </div>
-
-  <div class="attribution">
+  </main>
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="http://www.abizmo.dev">ab!Zmo</a>.
-  </div>
+  </footer>
 </body>
 </html>

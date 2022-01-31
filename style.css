@@ -24,20 +24,43 @@ body {
   margin-bottom: 2rem;
   padding: 1.3rem;
   width: 300px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-.card > img {
+.card__image {
   border-radius: 0.8rem;
-  width: auto;
+  height: 300px;
+  width: 100%;
+  background: url("images/image-equilibrium.jpg") center / contain no-repeat, hsla(178, 100%, 50%, 0%);
+  background-blend-mode: overlay;
+  position: relative;
 }
 
-.card h3 {
+.card__image:hover {
+  background-color: hsla(178, 100%, 50%, 50%);
+  cursor: pointer;
+}
+
+.card__image:hover:before {
+  content: url("images/icon-view.svg");
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.card h1 {
   color: hsl(0, 0%, 100%);
   font-size: 1.2rem;
   font-weight: 600;
   margin-top: 1.7rem;
   margin-bottom: 0;
+}
+
+.activate:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
 }
 
 .card__body {
