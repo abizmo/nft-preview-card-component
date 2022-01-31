@@ -24,12 +24,19 @@ body {
   margin-bottom: 2rem;
   padding: 1.3rem;
   width: 300px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-.card > img {
+.card__image {
   border-radius: 0.8rem;
-  width: auto;
+  height: 300px;
+  width: 100%;
+  background: url("/images/image-equilibrium.jpg") center / contain no-repeat;
+}
+
+.image:hover {
+  background-color: hsl(178, 100%, 50%);
 }
 
 .card h3 {
@@ -38,6 +45,11 @@ body {
   font-weight: 600;
   margin-top: 1.7rem;
   margin-bottom: 0;
+}
+
+.activate:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
 }
 
 .card__body {
