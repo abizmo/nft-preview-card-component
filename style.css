@@ -32,7 +32,7 @@ body {
   border-radius: 0.8rem;
   height: 300px;
   width: 100%;
-  background: url("images/image-equilibrium.jpg") center / contain no-repeat, hsla(178, 100%, 50%, 0%);
+  background: url("/images/image-equilibrium.jpg") center / contain no-repeat, hsla(178, 100%, 50%, 0%);
   background-blend-mode: overlay;
   position: relative;
 }
@@ -43,7 +43,7 @@ body {
 }
 
 .card__image:hover:before {
-  content: url("images/icon-view.svg");
+  content: url("/images/icon-view.svg");
   top: 50%;
   left: 50%;
   position: absolute;
